@@ -241,22 +241,59 @@ footer {
     width: 100%;
     .footer {
         padding-top: 50px !important;
+        // margin-bottom: 40px;
         .up {
             display: grid;
             grid-template-columns: 84% 16%;
-            .redes-sociales svg {
+            // .logo svg {
+            //     width: 100px;
+            //     height: 20px;
+            // }
+            .redes-sociales {
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .redes-sociales .red-social {
                 margin-left: 10px;
+                height: 35px;
+                width: 28px;
+                transition: all 100ms;
+            }
+            .redes-sociales .red-social:hover {
+                margin-left: 10px;
+                border-bottom: 2px solid $white;
+                height: 35px;
+                width: 28px;
             }
         }
         .down {
             display: grid;
             grid-template-columns: 74% 26%;
-            margin-top: 20px;
+            // margin-top: 20px;
             p {
                 color: $very-dark-gray;
                 font-family: 'Josefin Sans', sans-serif;
                 font-weight: 900;
+                margin-top: 15px;
+            }
+            nav {
+                margin-left: -12px;
             }
         }
     }
 }
+
+// li:after {
+//     content: "";
+//     background: $white;
+//     display: none;
+//     filter: brightness(80%);
+//     height: 2px;
+//     position: absolute;
+//     top: 39px;
+//     width: 33%;
+//     z-index: 9999;
+// }
+// li:hover:after {
+//     display: inline-block;
+// }

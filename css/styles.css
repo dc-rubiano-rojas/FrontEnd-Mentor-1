@@ -272,8 +272,29 @@ footer .footer .up {
       grid-template-columns: 84% 16%;
 }
 
-footer .footer .up .redes-sociales svg {
+footer .footer .up .redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+footer .footer .up .redes-sociales .red-social {
   margin-left: 10px;
+  height: 35px;
+  width: 28px;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+footer .footer .up .redes-sociales .red-social:hover {
+  margin-left: 10px;
+  border-bottom: 2px solid white;
+  height: 35px;
+  width: 28px;
 }
 
 footer .footer .down {
@@ -281,12 +302,16 @@ footer .footer .down {
   display: grid;
   -ms-grid-columns: 74% 26%;
       grid-template-columns: 74% 26%;
-  margin-top: 20px;
 }
 
 footer .footer .down p {
   color: dimgray;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 900;
+  margin-top: 15px;
+}
+
+footer .footer .down nav {
+  margin-left: -12px;
 }
 /*# sourceMappingURL=styles.css.map */
