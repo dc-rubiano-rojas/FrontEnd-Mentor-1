@@ -1,0 +1,292 @@
+/* Font 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Alata', sans-serif;*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  margin: 0 150px;
+}
+
+/* PRIMERA PAGINA */
+.fpage {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-position: 20% 0%;
+  height: 600px;
+}
+
+.fpage .filtro {
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
+}
+
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 53px;
+}
+
+.encabezado svg {
+  margin-top: 10px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  list-style: none;
+}
+
+nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 12px;
+  font-family: 'Alata', sans-serif;
+}
+
+nav li a {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+nav li:after {
+  content: "";
+  background: white;
+  display: none;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  height: 2px;
+  position: absolute;
+  top: 39px;
+  width: 33%;
+  z-index: 9999;
+}
+
+nav li:hover:after {
+  display: inline-block;
+}
+
+.banner {
+  border: 2.3px solid white;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 0 1px white;
+          box-shadow: 0 0 1px white;
+  height: 270px;
+  margin-top: 125px;
+  padding: 40px 50px 40px 50px;
+  width: 640px;
+}
+
+.banner h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 65px;
+  font-weight: lighter;
+}
+
+/* FIN PRIMERA PAGINA */
+/* SEGUNDA PAGINA */
+.spage {
+  background-color: white;
+  position: relative;
+}
+
+.spage .lowerBox {
+  background-image: url("../images//desktop/image-interactive.jpg");
+  height: 465px;
+  margin-top: 150px;
+  width: 663px;
+}
+
+.spage .upperBox {
+  background-color: white;
+  position: absolute;
+  top: 39%;
+  left: 51%;
+  padding: 80px;
+  width: 550px;
+}
+
+.spage .upperBox h2 {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.spage .upperBox p {
+  color: #8c8c8c;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14.3px;
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+/* FIN SEGUNDA PAGINA */
+/* TERCERA PAGINA */
+.tpage {
+  margin-top: 150px;
+}
+
+.tpage .tpage-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85.4% 15.6%;
+      grid-template-columns: 85.4% 15.6%;
+}
+
+.tpage .tpage-header h3 {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.tpage .tpage-header #button {
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  height: 36px;
+  line-height: 39px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 143px;
+  text-shadow: white 0 0 60px;
+}
+
+.tpage .tpage-header #button:hover {
+  -webkit-filter: blur(0.6px);
+          filter: blur(0.6px);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 50px;
+}
+
+.cards .card {
+  height: 425px;
+  width: 235px;
+  margin-right: 32px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.cards .card img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+.cards .card p {
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  width: 160px;
+  z-index: 9999;
+}
+
+.card:hover .filtro-card {
+  opacity: 0.4;
+}
+
+.card:hover p {
+  font-weight: 700;
+  color: black;
+  opacity: 100%;
+}
+
+.cards .card:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/* FIN TERCERA PAGINA */
+/* FOOTER */
+footer {
+  background-color: black;
+  margin-top: 150px;
+  height: 150px;
+  width: 100%;
+}
+
+footer .footer {
+  padding-top: 50px !important;
+}
+
+footer .footer .up {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 84% 16%;
+      grid-template-columns: 84% 16%;
+}
+
+footer .footer .up .redes-sociales svg {
+  margin-left: 10px;
+}
+
+footer .footer .down {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 74% 26%;
+      grid-template-columns: 74% 26%;
+  margin-top: 20px;
+}
+
+footer .footer .down p {
+  color: dimgray;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
+}
+/*# sourceMappingURL=styles.css.map */
